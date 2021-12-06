@@ -23,15 +23,14 @@ DROP TABLE IF EXISTS `appointment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `appointment` (
-  `Id_appointment` int NOT NULL,
+  `Id_appointment` int NOT NULL AUTO_INCREMENT,
   `date` date DEFAULT NULL,
   `clinic` varchar(45) DEFAULT NULL,
-  `doctor` varchar(45) DEFAULT NULL,
   `patient_id` int DEFAULT NULL,
   PRIMARY KEY (`Id_appointment`),
   KEY `patient_id_idx` (`patient_id`),
   CONSTRAINT `patient_id` FOREIGN KEY (`patient_id`) REFERENCES `patient` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +39,7 @@ CREATE TABLE `appointment` (
 
 LOCK TABLES `appointment` WRITE;
 /*!40000 ALTER TABLE `appointment` DISABLE KEYS */;
+INSERT INTO `appointment` VALUES (14,'2021-12-22','Dental',1);
 /*!40000 ALTER TABLE `appointment` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-05 10:36:10
+-- Dump completed on 2021-12-07  0:46:33

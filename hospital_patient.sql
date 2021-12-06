@@ -39,7 +39,7 @@ CREATE TABLE `patient` (
 
 LOCK TABLES `patient` WRITE;
 /*!40000 ALTER TABLE `patient` DISABLE KEYS */;
-INSERT INTO `patient` VALUES (1,'',1,'female',1,''),(3,'',4,'female',2,''),(6,'',6,'female',6,''),(7,'  ',6,'female',6,''),(9,'',9,'female',9,''),(11,'',1,'female',1,''),(22,'lina',22,NULL,599332,'9032'),(29,'rr',222,NULL,2021,'sss'),(33,'rer',1,'male',33,'22'),(88,'lina',44,'male',7,'55'),(111,'skksks',55,'male',92802,'rffioeui'),(9999,'hh',77,'male',88,'ffff');
+INSERT INTO `patient` VALUES (1,'loole',20,'female',5828923,'hufuf'),(3,'fay',18,'female',5892833,'9045 street'),(6,'hawazen',36,'female',5382293,'muthalth'),(7,'ghaida',47,'female',5892298,'almubaraz'),(9,'mohammed',9,'male',5929883,'hufuf'),(29,'raghad',50,'female',5929283,'88 street'),(33,'hamad',13,'male',528293,'alnaseem'),(2223,'khulud',35,'female',5889393,'mazroaa');
 /*!40000 ALTER TABLE `patient` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-05 10:36:09
+-- Dump completed on 2021-12-07  0:46:33
